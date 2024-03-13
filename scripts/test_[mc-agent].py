@@ -29,7 +29,7 @@ def test_agent(agent, episodes=3):
             # Render the game
             os.system("clear")
             sys.stdout.write(agent.env.render())
-            time.sleep(0.2) # FPS
+            time.sleep(0.1) # FPS
             
     print("Total reward: ", total_rewards)
     avg_reward = total_rewards / episodes
