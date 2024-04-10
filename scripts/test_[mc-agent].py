@@ -4,7 +4,7 @@ import time
 from monte_carlo_agent import OffPolicyMonteCarloAgent
 
 # Load the agent from the file
-with open('../agents/mc-agent.pkl', 'rb') as f:
+with open('../agents/mc-agent-dist.pkl', 'rb') as f:
     loaded_agent = pickle.load(f)
 
 def test_agent(agent, episodes=3):

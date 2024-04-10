@@ -4,7 +4,7 @@ import time
 from sarsa_lambda_agent import SarsaLambdaAgent
 
 # Load the agent from the file
-with open('../agents/sarsa-agent.pkl', 'rb') as f:
+with open('../agents/sarsa-agent-dist.pkl', 'rb') as f:
     loaded_agent = pickle.load(f)
 
 
