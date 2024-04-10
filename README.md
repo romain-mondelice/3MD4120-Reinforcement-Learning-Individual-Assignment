@@ -56,11 +56,18 @@ An additional set of experiments was conducted to examine how well the agents ad
 *-- Figure 3: Reward Evolution for Each Configuration --*
 
 ## Discussion
-The findings from the experiments are discussed, highlighting the agents' performance, the impact of hyperparameter settings, and their generalization abilities. Insights drawn from the sensitivity analysis and the challenges encountered during the implementation are also shared.
+The sensitivity analysis enabled us to identify the optimal combination of hyperparameters. Extending the training duration could potentially allow for even more precise determination of the best hyperparameters. However, the selected parameters have already demonstrated considerable effectiveness, as evidenced by the evolution and final rewards obtained during testing.
+
+
+It is evident that all models are capable of learning. However, there is a significant discrepancy in the rewards between the "TextFlappyBird-screen-v0" environment and the "TextFlappyBird-v0" environment, which is based on distance measurements.
+
+
+The "TextFlappyBird-v0" environment demonstrates quicker convergence and achieves substantially higher average rewards in the trained configuration.
+
+
+Regarding overfitting, it is observed that all models struggle to generalize behavior and achieve scores comparable to those in the trained configuration. This indicates a potential area for improvement in enhancing the models' ability to adapt to new or varied environments without significant loss in performance.
 
 ## Conclusion
-The project concludes with reflections on the reinforcement learning techniques applied to the TFB game, the effectiveness of the implemented agents, and potential areas for future research.
+This project offers valuable insights into the application of reinforcement learning techniques to the Text Flappy Bird (TFB) game. It highlights the effectiveness of the implemented agents and underscores the importance of selecting appropriate hyperparameters and environment. While the models show promising results in learning, there is still a big challenge of overfitting and generalization point.
 
-## How to Use This Repository
-- **Environment Setup**: Instructions for setting up the Text Flappy Bird environments.
-- **Running the Agents**: Guidelines on how to execute the Monte Carlo and Sarsa(λ) agents, including how to conduct the sensitivity analysis and interpret the results.
+One thing that I found very interesting that we can do to bring this generalization, is to combine the reward with an A* heuristic.
