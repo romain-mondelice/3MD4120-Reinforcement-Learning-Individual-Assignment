@@ -28,6 +28,7 @@ A comprehensive sensitivity analysis was conducted to identify the best hyperpar
   <img src="./reports/figures/sensitivity_analysis_sarsa_dist.png" width="48%" />
 </p>
 *Figure 1: Sensitivity Analysis Graphs*
+
 Respectively: sensitivity_analysis_mc_screen, sensitivity_analysis_mc_dist, sensitivity_analysis_sarsa_screen, sensitivity_analysis_sarsa_dist
 
 ## Experiments and Results
@@ -42,6 +43,7 @@ Once we have found the best set of hyper-parameters, we trained the model for 25
   <img src="./reports/figures/reward_evolution_rolling_mean_sarsa_dist.png" width="48%" />
 </p>
 *Figure 2: Rewards mean evolution over training*
+
 Respectively: reward_evolution_rolling_mean_mc_screen, reward_evolution_rolling_mean_mc_dist, reward_evolution_rolling_mean_sarsa_screen, reward_evolution_rolling_mean_sarsa_dist
 
 ### Overfitting Test
@@ -56,6 +58,7 @@ An additional set of experiments was conducted to examine how well the agents ad
   <img src="./reports/figures/average_reward_histogram_sarsa_dist.png" width="48%" />
 </p>
 *Figure 3: Reward Evolution for Each Configuration*
+
 Respectively: average_reward_histogram_mc_screen, average_reward_histogram_mc_dist, average_reward_histogram_sarsa_screen, average_reward_histogram_sarsa_dist
 
 ## Discussion
